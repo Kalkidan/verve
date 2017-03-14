@@ -17,6 +17,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -32,4 +35,8 @@ dependencies {
     compile project(':Verve_AdSDK_3.3.3')
     compile project(':verve_import')
     compile project(':VRV-moat-mobile-app-kit-1.7.6')
+
+    compile "com.google.dagger:dagger:2.9"
+    annotationProcessor "com.google.dagger:dagger-compiler:2.9"
+    provided 'javax.annotation:jsr250-api:1.0'
 }
