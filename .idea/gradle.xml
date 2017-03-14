@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/DoubleVerify-1.5.8" />
+            <option value="$PROJECT_DIR$/Roximity-sdk-2.0.42" />
+            <option value="$PROJECT_DIR$/VRV-moat-mobile-app-kit-1.7.6" />
+            <option value="$PROJECT_DIR$/Verve_AdSDK_3.3.3" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/verve_import" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
