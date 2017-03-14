@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.example.kaltadesse.myapplication.R;
-import com.example.kaltadesse.myapplication.SettingsLayout;
+import com.example.kaltadesse.myapplication.customview.SettingsLayout;
 import com.vervewireless.advert.Category;
 import com.vervewireless.advert.SplashAdManager;
 
