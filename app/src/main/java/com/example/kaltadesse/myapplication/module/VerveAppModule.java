@@ -1,5 +1,7 @@
 package com.example.kaltadesse.myapplication.module;
 
+import com.example.kaltadesse.myapplication.VerveApplication;
+
 import dagger.Module;
 
 /**
@@ -11,4 +13,10 @@ import dagger.Module;
 
 @Module
 public class VerveAppModule {
+
+    private VerveApplication mVerveApplication;
+
+    public VerveAppModule(VerveApplication verveApplication) {
+        mVerveApplication =  verveApplication;
+    }
 }

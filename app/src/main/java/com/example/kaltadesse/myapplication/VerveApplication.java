@@ -3,6 +3,9 @@ package com.example.kaltadesse.myapplication;
 import android.app.Application;
 import android.util.Log;
 
+import com.example.kaltadesse.myapplication.module.DaggerVerveAppComponent;
+import com.example.kaltadesse.myapplication.module.VerveAppComponent;
+import com.example.kaltadesse.myapplication.module.VerveAppModule;
 import com.vervewireless.advert.Category;
 import com.vervewireless.advert.LocationPermissionDelegate;
 import com.vervewireless.advert.SplashAdManager;
@@ -19,11 +22,50 @@ public class VerveApplication extends Application{
 
     private static final String MY_AD_KEYWORD = "adsdkexample";
 
+    private VerveAppComponent mVerveAppComponent;
+
     @Override
     public void onCreate() {
         super.onCreate();
+
+        /**
+         *
+         * Initialize verve sdk
+         *
+         */
         initVerveAdSDK();
+
+        /**
+         *
+         *
+         * Initialize verve app component
+         *
+         */
+        initializeVerveAppComponent();
     }
+
+
+    private void initializeVerveAppComponent(){
+
+        /**
+         *
+         * If we have the verve app component null then initialize it
+         *
+         */
+        if(mVerveAppComponent == null) {
+            mVerveAppComponent = DaggerVerveAppComponent.
+                    builder().
+                    verveAppModule(new VerveAppModule(this)).
+                    build();
+        }
+
+    }
+
+    /**
+     * @return {@link VerveAppComponent}
+     *
+     */
+    public VerveAppComponent getVerveAppComponent() {  return  mVerveAppComponent; }
 
     private void initVerveAdSDK() {
         VerveAdSDK.initialize(this, MY_AD_KEYWORD, new VerveAdSDK.InitializationListener() {
