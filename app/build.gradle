@@ -39,4 +39,17 @@ dependencies {
     compile "com.google.dagger:dagger:2.9"
     annotationProcessor "com.google.dagger:dagger-compiler:2.9"
     provided 'javax.annotation:jsr250-api:1.0'
+
+    // Only needed for MoPub
+    // Begin MoPub Requirements
+    compile('com.mopub:mopub-sdk:4.11.0@aar') {
+        transitive = true
+    }
+    // End MoPub
+
+    // Dfp
+    compile 'com.google.android.gms:play-services-ads:10.0.1'
+
+    //AppNexus
+    compile 'com.appnexus.opensdk:appnexus-sdk:2.15.1'
 }

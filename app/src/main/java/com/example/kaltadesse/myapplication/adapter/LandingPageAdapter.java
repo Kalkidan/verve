@@ -3,6 +3,9 @@ package com.example.kaltadesse.myapplication.adapter;
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
+import com.example.kaltadesse.myapplication.R;
+import com.example.kaltadesse.myapplication.utils.Constants;
+
 /**
  * Created by kaltadesse on 3/14/17.
  *
@@ -10,22 +13,16 @@ import android.view.ViewGroup;
  * verve sdk integration
  */
 
-public class LandingPageAdapter extends RecyclerView.Adapter{
-
+public class LandingPageAdapter extends CommonGridAdapter{
 
 
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return null;
-    }
-
-    @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    public void bindHeader() {
 
     }
 
     @Override
-    public int getItemCount() {
-        return 0;
+    public void bindItem() {
+
     }
 }
