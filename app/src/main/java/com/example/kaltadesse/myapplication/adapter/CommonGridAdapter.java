@@ -55,8 +55,6 @@ public abstract class CommonGridAdapter extends RecyclerView.Adapter{
 
     public CommonGridAdapter() {}
 
-    private int mCurrentPosition;
-
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
