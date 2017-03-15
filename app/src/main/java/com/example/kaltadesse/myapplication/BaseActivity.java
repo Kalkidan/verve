@@ -14,7 +14,20 @@ import android.support.v7.app.AppCompatActivity;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
+    /**
+     *
+     * This will set the content view of the desired subclass
+     *
+     */
     public abstract void setContentView();
+
+
+    /**
+     *
+     * This will inject the dependencies for the desired subclass
+     *
+     */
+    public abstract void injectDependencies();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,8 +35,16 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         /**
          *
+         * Inject dependencies
+         */
+        injectDependencies();
+
+        /**
+         *
          * This will set up the content view for the subclasses
          */
         setContentView();
+
+
     }
 }

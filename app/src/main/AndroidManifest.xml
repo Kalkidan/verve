@@ -17,6 +17,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".verve.VerveSample"/>
+        <activity android:name=".verve.VerveSplashManagerSample"/>
+        <activity android:name=".verve.VerveRectangleSample"/>
+
+        <activity android:name=".dfp.DfpBannerSample"/>
+        <activity android:name=".dfp.DfpInterstitialSample"/>
+        <activity android:name=".dfp.DfpRectangleSample"/>
+
+        <activity android:name=".mopub.MoPubBannerSample"/>
+        <activity android:name=".mopub.MoPubInterstitialSample"/>
+        <activity android:name=".mopub.MoPubRectangleSample"/>
+
+        <activity android:name=".appnexus.AppNexusBannerSample"/>
+        <activity android:name=".appnexus.AppNexusRectangleSample"/>
+        <activity android:name=".appnexus.AppNexusInterstitialSample"/>
+
+        <!--Only needed for MoPub-->
+        <!--Start MoPub Activities-->
+        <activity android:name="com.mopub.mobileads.MoPubActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name="com.mopub.mobileads.MraidActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name="com.mopub.common.MoPubBrowser"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name="com.mopub.mobileads.MraidVideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <!--End MoPub Activities-->
     </application>
 
 </manifest>

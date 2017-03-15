@@ -1,5 +1,7 @@
 package com.example.kaltadesse.myapplication.module;
 
+import com.example.kaltadesse.myapplication.adapter.LandingPageAdapter;
+
 import dagger.Subcomponent;
 
 /**
@@ -11,5 +13,8 @@ import dagger.Subcomponent;
  */
 
 @Subcomponent (modules = {LandingActivityModule.class})
+@LandingActivityScope
 public interface LandingActivityComponent {
+
+    void inject(LandingPageAdapter landingPageAdapter);
 }
